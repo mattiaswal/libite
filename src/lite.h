@@ -87,6 +87,7 @@ int     fremove    (const char *fmt, ...) __attribute__ ((format (printf, 1, 2))
 FILE   *tempfile   (void);
 ssize_t copyfile   (const char *src, const char *dst, int len, int opt);
 int     movefile   (const char *src, const char *dst);
+int     rmrf       (const char *path);
 int     fcopyfile  (FILE *src, FILE *dst);
 ssize_t fsendfile  (FILE *src, FILE *dst, size_t len);
 int     truncatef  (off_t length, const char *fmt, ...) __attribute__ ((format (printf, 2, 3)));
